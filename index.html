@@ -49,6 +49,7 @@
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+                
             </div>
         </section>
 
@@ -271,7 +272,36 @@
         <button type="button" class="close-button" data-modal-close> <svg  width="18" height="18">
                 <use href="./images/symbol44-defs.svg#icon-close-black"></use>
             </svg></button>
-        
+
+         <div class="form-container"> 
+
+        <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+
+        <form class="form js-speaker-form">
+            
+            <div class="user-form">
+            <label for="name">Имя</label>
+                        <input type="text" name="name" id="name"></div>
+
+            <div class="user-form">
+        <label for="tel">Телефон</label>
+        <input type="tel" name="tel" id="tel" placeholder="+38044-123-45-67"/></div>
+
+        <div class="user-form">
+            <label  for="email">Почта</label>
+            <input type="email" name="email" id="email" placeholder="email@ukr.net"/></div>
+
+            <div class="user-form">
+            <label for="comments">Комментарии</label>
+           <textarea name="comments" id="comments" placeholder="Введите текст" rows="10"></textarea></div>
+
+            <div role="group" class="agree">
+            <input type="checkbox" name="agreement" value="agree" id="agree" />
+            <label for="agree">Соглашаюсь с рассылкой и принимаю <span class="conditions"><a href="">Условия договора</a></span></label></div>
+
+                       <button class="form-button" type="submit">Отправить</button>
+    </form>
+        </div>
     </div>
 
 </div>
@@ -279,5 +309,19 @@
 <script src="./js/modal.js"></script>
 
 
+<script>
+    (()=>{
+        document
+        .querySelector('.js-speaker-form')
+        addEventListener('submit', e=>{
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name)=>
+            console.log(`${name}: ${value}`),
+        );
+        });
+    })();
+    
+</script>
 </body>
 </html>
