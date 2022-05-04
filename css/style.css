@@ -402,6 +402,7 @@ transition: transform 3000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-form{
+    
     display: flex;
     flex-direction: column;
    
@@ -415,7 +416,9 @@ letter-spacing: 0.01em;
 color: #757575;
 }
 
+
 .user-form input{
+
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -424,9 +427,19 @@ color: #757575;
     padding-bottom: 4px;
 }
 
+.form-icon {
+
+    width: 10px;
+    height: 10px;
+    color: #188CE8;
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
+
 
 .user-form label{
-    margin-bottom: 4px;
+        margin-bottom: 4px;
 }
 
 textarea{
@@ -1130,3 +1143,31 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
+.news{
+    margin-left: 93px;
+}
+.news-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.news-title input{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    
+    width: 358px;
+    height: 50px;
+}
+
+.news-button{
+    width: 200px;
+    height: 50px;
+   
+}
