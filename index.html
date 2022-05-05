@@ -265,8 +265,10 @@
 
             <div class="news">
                 <h3 class="news-title">Подпишитесь на рассылку</h3>
-                <input type="email" name="email" id="email" placeholder="E-mail"/></div>
-                <button class="news-button" type="submit">Подписаться</button>
+                <input type="email" class="mailme" name="email" id="email" placeholder="E-mail"/>
+                <button class="news-button" type="submit">Подписаться<span class="news-icon"><svg  width="24" height="24">
+                    <use href="./images/symbol34-defs.svg#icon-icon-send"></use>
+                </svg></span></button>
             </div>
         
     </div>
@@ -287,25 +289,38 @@
             
             <div class="user-form">
             <label for="name">Имя</label>
-                        <input type="text" name="name" id="name"></div>
+            <div class="icon-input">
+                        <input type="text" class="input-field" name="name" id="name" placeholder="Иван Петров"/>
+                    <svg class="name-icon" width="18" height="18">
+                        <use href="./images/symbol33-defs.svg#icon-person-black"></use>
+                    </svg></div>
+                    </div>
 
             <div class="user-form">
         <label for="tel">Телефон</label>
-        <input type="tel" name="tel" id="tel"/>
-        
+        <div class="icon-input">
+        <input type="tel"  class="input-field" name="tel" id="tel" placeholder="+38 044 123 45 67"/>
+        <svg class="name-icon" width="18" height="18">
+            <use href="./images/symbol33-defs.svg#icon-phone-black"></use>
+        </svg></div>
+    </div>
 
         <div class="user-form">
             <label  for="email">Почта</label>
-            <input type="email" name="email" id="email" placeholder="email@ukr.net"/></div>
+            <div class="icon-input">
+            <input type="email"  class="input-field" name="email" id="email" placeholder="email@ukr.net"/>
+        <svg class="name-icon" width="18" height="18">
+            <use href="./images/symbol33-defs.svg#icon-email-black"></use>
+        </svg></div>
+        </div>
 
             <div class="user-form">
             <label for="comments">Комментарии</label>
-           <textarea name="comments" id="comments" placeholder="Введите текст" rows="10"></textarea></div>
+           <textarea name="comments" class="input-field" id="comments" placeholder="Введите текст" rows="10"></textarea></div>
 
             <div role="group" class="agree">
-            <input type="checkbox" name="agreement" value="agree" id="agree" />
-            <label for="agree">Соглашаюсь с рассылкой и принимаю <span class="conditions"><a href="">Условия договора</a></span></label></div>
-
+            <input type="checkbox" class="agree visually-hidden" name="agreement" value="agreement" id="agree" />
+            <label for="agree" class="agree-text"></span>Соглашаюсь с рассылкой и принимаю <span class="conditions"><a href=""> Условия договора</a></span></label></div>
                        <button class="form-button" type="submit">Отправить</button>
     </form>
         </div>
