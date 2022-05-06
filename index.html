@@ -265,10 +265,11 @@
 
             <div class="news">
                 <h3 class="news-title">Подпишитесь на рассылку</h3>
+                <div class="input-button">
                 <input type="email" class="mailme" name="email" id="email" placeholder="E-mail"/>
-                <button class="news-button" type="submit">Подписаться<span class="news-icon"><svg  width="24" height="24">
+                <button class="news-button" type="submit">Подписаться<svg class="news-icon" width="24" height="24">
                     <use href="./images/symbol34-defs.svg#icon-icon-send"></use>
-                </svg></span></button>
+                </svg></button></div>
             </div>
         
     </div>
@@ -281,12 +282,12 @@
                 <use href="./images/symbol44-defs.svg#icon-close-black"></use>
             </svg></button>
 
-         <div class="form-container"> 
-
-        <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+               
 
         <form class="form js-speaker-form">
-            
+
+            <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+
             <div class="user-form">
             <label for="name">Имя</label>
             <div class="icon-input">
@@ -316,14 +317,14 @@
 
             <div class="user-form">
             <label for="comments">Комментарии</label>
-           <textarea name="comments" class="input-field" id="comments" placeholder="Введите текст" rows="10"></textarea></div>
+           <textarea name="comments" class="text-field" id="comments" placeholder="Введите текст" rows="10"></textarea></div>
 
             <div role="group" class="agree">
             <input type="checkbox" class="agree visually-hidden" name="agreement" value="agreement" id="agree" />
-            <label for="agree" class="agree-text"></span>Соглашаюсь с рассылкой и принимаю <span class="conditions"><a href=""> Условия договора</a></span></label></div>
+            <label for="agree" class="agree-text">Соглашаюсь с рассылкой и принимаю <span ><a href="" class="conditions link">Условия договора</a></span></label></div>
                        <button class="form-button" type="submit">Отправить</button>
     </form>
-        </div>
+        
     </div>
 
 </div>
