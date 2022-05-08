@@ -575,9 +575,7 @@ font-size: 16px;
 line-height: 30px;
 cursor: pointer;
 
-display: flex;
-align-items: center;
-text-align: center;
+
 letter-spacing: 0.06em;
 
 color: #FFFFFF;
@@ -738,7 +736,7 @@ margin-right: 8.38px;
       }  
 
  .position {
-     padding-top: 30px;
+     
      text-align: center;
  } 
 
@@ -801,7 +799,7 @@ color: var(--hero-footer-color);
     justify-content: center;
 
     margin-top: 16px;
-    padding-bottom: 30px;
+    
 }
 
 .soc-link {
@@ -841,6 +839,10 @@ color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-left: 10px;
 }
 
+.person-footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
  /*second-page*/
  
@@ -1250,6 +1252,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .input-button {
     display: flex;
+    margin-top: 20px;
 }
 
 .mailme{
@@ -1260,8 +1263,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 358px;
     height: 50px;
     padding-left: 16px;
-    margin-top: 20px;
-    
+        
 }
 
 .mailme:focus{
@@ -1269,17 +1271,15 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .news-button{
-    position: relative;
-   display: flex;
+  
     width: 200px;
     height: 50px;
+display: flex;
+
 margin-left: 12px;
-margin-top: 20px;
-padding-top: 10px;
-padding-left: 29px;
    background-color: #2196F3;
- align-items: baseline;
- 
+align-items: center;
+ justify-content: center;
 font-weight: 700;
 font-size: 16px;
 line-height: 30px;
@@ -1297,13 +1297,11 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .news-button:hover,
 .news-button :focus{
 background-color: #188CE8;
+
 }
 
 
 .news-icon{
-  margin-left: 10px;
- position: absolute; 
- right: 28px;
- top: 50%;
- transform: translateY(-50%);
+ 
+margin-left: 10px;
 }
